@@ -1,0 +1,1 @@
+rm build/all-o/* build/boot/*

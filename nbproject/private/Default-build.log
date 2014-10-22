@@ -1,0 +1,45 @@
+./ccompil-Linux/tools/avr/bin/avr-g++  -I. -c sextant/main.cpp -Os -DF_CPU=16000000UL -I. -mmcu=atmega328p  -o sextant/main.o
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+sextant/main.cpp:13: warning: only initialized variables can be placed into program memory area
+sextant/main.cpp: In function ‘int main()’:
+sextant/main.cpp:166: warning: deprecated conversion from string constant to ‘char*’
+sextant/main.cpp: In function ‘void exit(int)’:
+sextant/main.cpp:186: warning: ‘noreturn’ function does return
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+mv -f sextant/main.o build/all-o
+./ccompil-Linux/tools/avr/bin/avr-g++  -I. -c Applications/Blink/Blink.cpp -Os -DF_CPU=16000000UL -I. -mmcu=atmega328p  -o Applications/Blink/Blink.o
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+mv -f Applications/Blink/Blink.o build/all-o
+./ccompil-Linux/tools/avr/bin/avr-g++  -I. -c Applications/ST7565/ST7565.cpp -Os -DF_CPU=16000000UL -I. -mmcu=atmega328p  -o Applications/ST7565/ST7565.o
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Applications/ST7565/ST7565.cpp:289:1: warning: "PROGMEM" redefined
+Applications/ST7565/ST7565.cpp:30:1: warning: this is the location of the previous definition
+Applications/ST7565/ST7565.cpp:32: warning: only initialized variables can be placed into program memory area
+Applications/ST7565/ST7565.cpp:538: warning: only initialized variables can be placed into program memory area
+Applications/ST7565/ST7565.cpp:609: warning: only initialized variables can be placed into program memory area
+Applications/ST7565/ST7565.cpp:632: warning: only initialized variables can be placed into program memory area
+Applications/ST7565/ST7565.cpp:655: warning: only initialized variables can be placed into program memory area
+Applications/ST7565/ST7565.cpp:664: warning: only initialized variables can be placed into program memory area
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+mv -f Applications/ST7565/ST7565.o build/all-o
+./ccompil-Linux/tools/avr/bin/avr-g++  -I. -c drivers/uart.cpp -Os -DF_CPU=16000000UL -I. -mmcu=atmega328p  -o drivers/uart.o
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+mv -f drivers/uart.o build/all-o
+echo 'Votre compilateur CPP_Linux et votre lieur LD_Linux'
+Votre compilateur CPP_Linux et votre lieur LD_Linux
+./ccompil-Linux/tools/avr/bin/avr-gcc -mmcu=atmega328p   -o build/boot/sextant.elf build/all-o/ST7565.o build/all-o/uart.o build/all-o/Blink.o build/all-o/main.o 
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libBuildTrace.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+#support/crtm328p.o 
+./ccompil-Linux/tools/avr/bin/avr-objcopy  -O ihex -R .eeprom build/boot/sextant.elf build/boot/sextant.elf.hex

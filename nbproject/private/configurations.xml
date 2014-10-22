@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="Applications">
+        <df name="Blink">
+          <in>Blink.cpp</in>
+          <in>Blink.h</in>
+        </df>
+        <df name="ST7565">
+          <in>SA_ST7565.h</in>
+          <in>ST7565.cpp</in>
+          <in>ST7565.h</in>
+          <in>glcdfont.c</in>
+        </df>
+      </df>
+      <df name="build">
+        <df name="all-o">
+        </df>
+        <df name="boot">
+        </df>
+      </df>
+      <df name="ccompil-Linux">
+        <df name="tools">
+          <df name="avr">
+            <df name="bin">
+            </df>
+            <df name="bin.gcc">
+            </df>
+            <df name="lib">
+              <df name="avr">
+                <df name="bin">
+                </df>
+                <df name="include">
+                  <df name="avr">
+                    <in>boot.h</in>
+                    <in>builtins.h</in>
+                    <in>common.h</in>
+                    <in>crc16.h</in>
+                    <in>delay.h</in>
+                    <in>eeprom.h</in>
+                    <in>fuse.h</in>
+                    <in>interrupt.h</in>
+                    <in>io.h</in>
+                    <in>io1200.h</in>
+                    <in>io2313.h</in>
+                    <in>io2323.h</in>
+                    <in>io2333.h</in>
+                    <in>io2343.h</in>
+                    <in>io43u32x.h</in>
+                    <in>io43u35x.h</in>
+                    <in>io4414.h</in>
+                    <in>io4433.h</in>
+                    <in>io4434.h</in>
+                    <in>io58u54a.h</in>
+                    <in>io76c711.h</in>
+                    <in>io8515.h</in>
+                    <in>io8534.h</in>
+                    <in>io8535.h</in>
+                    <in>io86r401.h</in>
+                    <in>io90pwm1.h</in>
+                    <in>io90pwm216.h</in>
+                    <in>io90pwm2b.h</in>
+                    <in>io90pwm316.h</in>
+                    <in>io90pwm3b.h</in>
+                    <in>io90pwmx.h</in>
+                    <in>ioat94k.h</in>
+                    <in>iocan128.h</in>
+                    <in>iocan32.h</in>
+                    <in>iocan64.h</in>
+                    <in>iocanxx.h</in>
+                    <in>iom103.h</in>
+                    <in>iom128.h</in>
+                    <in>iom1280.h</in>
+                    <in>iom1281.h</in>
+                    <in>iom1284p.h</in>
+                    <in>iom16.h</in>
+                    <in>iom161.h</in>
+                    <in>iom162.h</in>
+                    <in>iom163.h</in>
+                    <in>iom164.h</in>
+                    <in>iom165.h</in>
+                    <in>iom165p.h</in>
+                    <in>iom168.h</in>
+                    <in>iom168p.h</in>
+                    <in>iom169.h</in>
+                    <in>iom169p.h</in>
+                    <in>iom16hva.h</in>
+                    <in>iom2560.h</in>
+                    <in>iom2561.h</in>
+                    <in>iom32.h</in>
+                    <in>iom323.h</in>
+                    <in>iom324.h</in>
+                    <in>iom325.h</in>
+                    <in>iom3250.h</in>
+                    <in>iom328p.h</in>
+                    <in>iom329.h</in>
+                    <in>iom3290.h</in>
+                    <in>iom32c1.h</in>
+                    <in>iom32hvb.h</in>
+                    <in>iom32m1.h</in>
+                    <in>iom32u4.h</in>
+                    <in>iom32u6.h</in>
+                    <in>iom406.h</in>
+                    <in>iom48.h</in>
+                    <in>iom48p.h</in>
+                    <in>iom64.h</in>
+                    <in>iom640.h</in>
+                    <in>iom644.h</in>
+                    <in>iom645.h</in>
+                    <in>iom6450.h</in>
+                    <in>iom649.h</in>
+                    <in>iom6490.h</in>
+                    <in>iom8.h</in>
+                    <in>iom8515.h</in>
+                    <in>iom8535.h</in>
+                    <in>iom88.h</in>
+                    <in>iom88p.h</in>
+                    <in>iom8hva.h</in>
+                    <in>iomx8.h</in>
+                    <in>iomxx0_1.h</in>
+                    <in>iomxx4.h</in>
+                    <in>iomxxhva.h</in>
+                    <in>iotn11.h</in>
+                    <in>iotn12.h</in>
+                    <in>iotn13.h</in>
+                    <in>iotn13a.h</in>
+                    <in>iotn15.h</in>
+                    <in>iotn167.h</in>
+                    <in>iotn22.h</in>
+                    <in>iotn2313.h</in>
+                    <in>iotn24.h</in>
+                    <in>iotn25.h</in>
+                    <in>iotn26.h</in>
+                    <in>iotn261.h</in>
+                    <in>iotn28.h</in>
+                    <in>iotn43u.h</in>
+                    <in>iotn44.h</in>
+                    <in>iotn45.h</in>
+                    <in>iotn461.h</in>
+                    <in>iotn48.h</in>
+                    <in>iotn84.h</in>
+                    <in>iotn85.h</in>
+                    <in>iotn861.h</in>
+                    <in>iotn88.h</in>
+                    <in>iotnx4.h</in>
+                    <in>iotnx5.h</in>
+                    <in>iotnx61.h</in>
+                    <in>iousb1286.h</in>
+                    <in>iousb1287.h</in>
+                    <in>iousb162.h</in>
+                    <in>iousb646.h</in>
+                    <in>iousb647.h</in>
+                    <in>iousb82.h</in>
+                    <in>iousbxx2.h</in>
+                    <in>iousbxx6_7.h</in>
+                    <in>iox128a1.h</in>
+                    <in>iox128a3.h</in>
+                    <in>iox256a3.h</in>
+                    <in>iox256a3b.h</in>
+                    <in>iox64a1.h</in>
+                    <in>iox64a3.h</in>
+                    <in>lock.h</in>
+                    <in>parity.h</in>
+                    <in>pgmspace.h</in>
+                    <in>portpins.h</in>
+                    <in>power.h</in>
+                    <in>sfr_defs.h</in>
+                    <in>signal.h</in>
+                    <in>sleep.h</in>
+                    <in>version.h</in>
+                    <in>wdt.h</in>
+                  </df>
+                  <df name="compat">
+                    <in>deprecated.h</in>
+                    <in>ina90.h</in>
+                    <in>twi.h</in>
+                  </df>
+                  <df name="util">
+                    <in>atomic.h</in>
+                    <in>crc16.h</in>
+                    <in>delay.h</in>
+                    <in>delay_basic.h</in>
+                    <in>parity.h</in>
+                    <in>setbaud.h</in>
+                    <in>twi.h</in>
+                  </df>
+                  <in>alloca.h</in>
+                  <in>assert.h</in>
+                  <in>ctype.h</in>
+                  <in>errno.h</in>
+                  <in>inttypes.h</in>
+                  <in>math.h</in>
+                  <in>setjmp.h</in>
+                  <in>stdint.h</in>
+                  <in>stdio.h</in>
+                  <in>stdlib.h</in>
+                  <in>string.h</in>
+                </df>
+                <df name="lib">
+                  <df name="avr25">
+                  </df>
+                  <df name="avr3">
+                  </df>
+                  <df name="avr31">
+                  </df>
+                  <df name="avr35">
+                  </df>
+                  <df name="avr4">
+                  </df>
+                  <df name="avr5">
+                  </df>
+                  <df name="avr51">
+                  </df>
+                  <df name="avr6">
+                  </df>
+                  <df name="avrxmega5">
+                  </df>
+                  <df name="avrxmega7">
+                  </df>
+                  <df name="ldscripts">
+                  </df>
+                </df>
+              </df>
+              <df name="gcc">
+                <df name="avr">
+                  <df name="4.3.2">
+                    <df name="avr25">
+                    </df>
+                    <df name="avr3">
+                    </df>
+                    <df name="avr31">
+                    </df>
+                    <df name="avr35">
+                    </df>
+                    <df name="avr4">
+                    </df>
+                    <df name="avr5">
+                    </df>
+                    <df name="avr51">
+                    </df>
+                    <df name="avr6">
+                    </df>
+                    <df name="avrxmega5">
+                    </df>
+                    <df name="avrxmega7">
+                    </df>
+                    <df name="include">
+                      <in>float.h</in>
+                      <in>iso646.h</in>
+                      <in>stdarg.h</in>
+                      <in>stdbool.h</in>
+                      <in>stddef.h</in>
+                      <in>stdfix.h</in>
+                      <in>tgmath.h</in>
+                      <in>unwind.h</in>
+                      <in>varargs.h</in>
+                    </df>
+                    <df name="include-fixed">
+                      <in>limits.h</in>
+                      <in>syslimits.h</in>
+                    </df>
+                    <df name="install-tools">
+                      <df name="include">
+                        <in>limits.h</in>
+                      </df>
+                      <in>gsyslimits.h</in>
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+            <df name="share">
+              <df name="doc">
+                <df name="binutils-avr">
+                </df>
+                <df name="gcc-avr">
+                </df>
+              </df>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="ccompil-Mac">
+        <df name="tools">
+          <df name="avr">
+            <df name="avr">
+              <df name="bin">
+              </df>
+              <df name="lib">
+                <df name="avr5">
+                </df>
+                <df name="ldscripts">
+                </df>
+              </df>
+            </df>
+            <df name="avr-4">
+              <df name="bin">
+              </df>
+            </df>
+            <df name="bin">
+            </df>
+            <df name="lib">
+              <df name="gcc">
+                <df name="avr">
+                  <df name="4.3.2">
+                  </df>
+                </df>
+              </df>
+              <df name="pkgconfig">
+              </df>
+            </df>
+            <df name="libexec">
+              <df name="gcc">
+                <df name="avr">
+                  <df name="4.3.2">
+                    <df name="install-tools">
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="drivers">
+        <in>uart.cpp</in>
+        <in>uart.h</in>
+      </df>
+      <df name="hal">
+      </df>
+      <df name="include">
+        <in>common.h</in>
+        <in>delay.h</in>
+        <in>inttypes.h</in>
+        <in>io.h</in>
+        <in>iom328p.h</in>
+        <in>portpins.h</in>
+        <in>setbaud.h</in>
+        <in>sfr_defs.h</in>
+        <in>stdint.h</in>
+        <in>string.h</in>
+      </df>
+      <df name="lib">
+      </df>
+      <df name="sextant">
+        <in>main.cpp</in>
+      </df>
+      <df name="support">
+      </df>
+      <df name="Trash">
+        <in>io.h</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
