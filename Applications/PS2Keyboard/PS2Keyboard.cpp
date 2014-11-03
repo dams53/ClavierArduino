@@ -18,7 +18,7 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include <lib/ST7565/ST7565.h>
+// Inclusion de la librairie
 #include "PS2Keyboard.h"
 
 
@@ -60,7 +60,9 @@ bool ps2Keyboard_BreakActive;
 
 
 // The ISR for the external interrupt
-ISR(INT1_vect) {
+//ISR(INT1_vect) {
+// Interruption du clavier
+void ps2interrupt (void){
   int value = digitalRead(ps2Keyboard_DataPin);
   
   if(ps2Keyboard_BufferPos > 0 && ps2Keyboard_BufferPos < 9) {
@@ -76,10 +78,11 @@ ISR(INT1_vect) {
       ps2Keyboard_BreakActive = false;
     } else {
       ps2Keyboard_CharBuffer = ps2Keyboard_CurrentBuffer;
-      
+     
     }
     ps2Keyboard_CurrentBuffer = 0;
     ps2Keyboard_BufferPos = 0;
+	 
   }
 }
 
@@ -87,6 +90,7 @@ PS2Keyboard::PS2Keyboard() {
   // nothing to do here	
 }
 
+// On initialise le clavier
 void PS2Keyboard::begin(int dataPin) {
   // Prepare the global variables
   ps2Keyboard_DataPin = dataPin;
@@ -102,15 +106,26 @@ void PS2Keyboard::begin(int dataPin) {
   digitalWrite(dataPin, HIGH);
   
   // Global Enable INT1 interrupt
-  EIMSK |= ( 1 << INT1);
+ // EIMSK |= ( 1 << INT1);
   // Falling edge triggers interrupt
-  EICRA |= (0 << ISC10) | (1 << ISC11);
+ // EICRA |= (0 << ISC10) | (1 << ISC11);
+ attachInterrupt(1, ps2interrupt, LOW);
+ // premier paramètre numéro de l'interruption donc 0 ou 1 normalement
+ // troisième paramètre LOW, CHANGE, RISING ou FALLING
+#if 0
+ // Global Enable INT1 interrupt
+ EIMSK |= ( 1 << INT1);
+ // Falling edge triggers interrupt
+ EICRA |= (0 << ISC10) | (1 << ISC11);
+#endif
 }
 
+// Vérification si le clavier est disponible
 bool PS2Keyboard::available() {
   return ps2Keyboard_CharBuffer != 0;
 }
 
+// Lecture des caractères
 uint8_t PS2Keyboard::read() {
   uint8_t result = ps2Keyboard_CharBuffer;
   

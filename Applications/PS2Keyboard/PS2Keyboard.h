@@ -27,7 +27,8 @@
 #include "include/iom328p.h"
 #endif
 
-#include <Applications/Interrupt/interrupt.h>
+#include <lib/ST7565/ST7565.h>
+#include "Applications/Interrupt/interrupt.h"
 #include <include/pgmspace.h>
 
 /*
